@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+    depends_on:
+      - postgres
+    command: 'rails server -b0.0.0.0'
+    env_file:
+      - ./app.default.env
+
+  postgres:
+    image: postgres:9.6.1
+    # ports:
+      # - '5432:5432'
+    volumes:
+      - ./docker/postgres/:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: password
