@@ -17,5 +17,5 @@
 .byebug_history
 
 /docker
-/app.local.env
-/app.secret.env
+/*.env
+!/app.default.env
