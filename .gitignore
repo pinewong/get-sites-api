@@ -16,5 +16,9 @@
 # Ignore Byebug command history file.
 .byebug_history
 
+# Default
+.DS_Store
+*.bak
+
 # Env file
 .env
