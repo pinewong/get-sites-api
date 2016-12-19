@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'dotenv-rails', '~> 2.1.1'
 
 # Auth
+gem 'devise', '~> 4.2.0'
 gem 'jwt', '~> 1.5.6'
 
 gem 'mysql2', '~> 0.4.5'

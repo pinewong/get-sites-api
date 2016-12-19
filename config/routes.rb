@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root 'demos#index'
+  root 'auth#index'
   
   namespace :v1 do
-    resources :jwt, only: [:index]
+    resources :auth, only: [:index, :create, :update]
   end
 end
