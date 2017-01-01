@@ -27,6 +27,7 @@ gem 'puma', '3.6.0'
 # gem 'rack-cors'
 
 group :development, :test do
+  gem 'yard', '~> 0.9.2'
   gem 'factory_girl_rails', '~> 4.8.0'
   gem 'rspec-rails', '~> 3.5.2'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

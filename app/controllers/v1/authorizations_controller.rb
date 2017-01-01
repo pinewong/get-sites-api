@@ -1,9 +1,19 @@
 ##
 # User authorization, get access token.
+# @author PineWong
 #
 class V1::AuthorizationsController < V1::ApplicationController
   before_action :authenticate!, except: [:create]
 
+  ##
+  # Create a access token
+  #   POST /v1/authorizations
+  #
+  # @param email [String] the user email
+  # @param password [String] the user password
+  #
+  # @return [User] the token
+  # 
   def create
     # Blank Email/Password
     if params[:user].blank? || 
@@ -29,6 +39,15 @@ class V1::AuthorizationsController < V1::ApplicationController
 
   ##
   # Get access token data structure
+  #
+  # @return [Json] the token
+  #   {
+  #     access_token: JsonWebToken.encode({ user_id: @user.id }),
+  #     user: {
+  #       id: @user.id,
+  #       email: @user.email
+  #     }
+  #   }
   #
   def access_token
     {
