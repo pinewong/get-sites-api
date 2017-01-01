@@ -1,6 +1,6 @@
 # GET-SITES API
 
-[![yard](https://img.shields.io/badge/docs-yard-brightgreen.svg)](http://www.rubydoc.info/pinewong/get-sites-api)
+[![yard](https://img.shields.io/badge/docs-yard-brightgreen.svg)](http://www.rubydoc.info/github/pinewong/get-sites-api)
 
 This project is under development.
 
