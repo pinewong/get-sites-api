@@ -1,0 +1,4 @@
+exclude_paths:
+- "lib/assets/"
+- "public/assets/"
+- "vender/assets/"

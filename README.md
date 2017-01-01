@@ -1,5 +1,8 @@
 # GET-SITES API
 
+[![Build Status](https://travis-ci.org/pinewong/get-sites-api.svg?branch=master)](https://travis-ci.org/pinewong/get-sites-api)
+[![Code Climate](https://codeclimate.com/github/pinewong/get-sites-api/badges/gpa.svg)](https://codeclimate.com/github/pinewong/get-sites-api)
+[![codecov.io](https://codecov.io/github/pinewong/get-sites-api/coverage.svg?branch=master)](https://codecov.io/github/pinewong/get-sites-api?branch=master)
 [![yard](https://img.shields.io/badge/docs-yard-brightgreen.svg)](http://www.rubydoc.info/github/pinewong/get-sites-api)
 
 This project is under development.
