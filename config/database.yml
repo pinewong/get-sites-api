@@ -13,17 +13,17 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: <%= ENV['DEFAULT_DATABASE_USER'] %>
-  password: <%= ENV['DEFAULT_DATABASE_PASSWORD'] %>
-  host: <%= ENV['DEFAULT_DATABASE_HOST'] %>
+  username: <%= ENV['DEFAULT_DATABASE_USER'] || 'root' %>
+  password: <%= ENV['DEFAULT_DATABASE_PASSWORD'] || 'password' %>
+  host: <%= ENV['DEFAULT_DATABASE_HOST'] || 'localhost' %>
 
 development:
   <<: *default
-  database: <%= ENV['DEVELOPMENT_DATABASE_NAME'] %>
+  database: <%= ENV['DEVELOPMENT_DATABASE_NAME'] || 'getsites_development' %>
 
 test:
   <<: *default
-  database: <%= ENV['TEST_DATABASE_NAME'] %>
+  database: <%= ENV['TEST_DATABASE_NAME'] || 'getsites_test' %>
 
 production:
   <<: *default
