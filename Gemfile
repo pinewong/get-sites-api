@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Environment via .env
 gem 'dotenv-rails', '~> 2.1.1'
 
-# Auth
+# Authorization
 gem 'devise', '~> 4.2.0'
 gem 'jwt', '~> 1.5.6'
 
@@ -27,6 +27,8 @@ gem 'puma', '3.6.0'
 # gem 'rack-cors'
 
 group :development, :test do
+  gem 'factory_girl_rails', '~> 4.8.0'
+  gem 'rspec-rails', '~> 3.5.2'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '9.0.6', platform: :mri
 end

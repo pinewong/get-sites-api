@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  root 'auth#index'
+  root 'root#index'
   
   namespace :v1 do
-    resources :auth, only: [:index, :create, :update]
+    ##
+    # Authentication
+    #
+    resources :authorizations, only: [:create]
   end
 end
