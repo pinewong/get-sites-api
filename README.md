@@ -8,9 +8,9 @@ This project is under development.
 ## Progress
 
 - [X] 2016/11/15: Init the API and WEB project.**(v0.1)**
-- [ ] 2016/11/20: Yard API doc.
-- [ ] 2016/11/25: The basic authorization system.
-- [ ] 2016/12/01: The complete authorization system.**(v0.2)**
+- [X] 2016/11/20: Yard API doc.
+- [X] 2016/11/25: The basic authorization system.
+- [X] 2016/12/01: The complete authorization system.**(v0.2)**
 - [ ] 2017/01/01: Web pages.**(v0.3)**
 - [ ] 2017/01/07: File interaction operate.
 - [ ] 2017/01/10: File and project manage system online.
