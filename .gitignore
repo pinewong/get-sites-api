@@ -23,3 +23,6 @@
 # Env file
 .env
 
+# Docs
+/doc
+/.yardoc
